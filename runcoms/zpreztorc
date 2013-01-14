@@ -29,10 +29,17 @@ zstyle ':prezto:load' pmodule \
   'editor' \
   'history' \
   'directory' \
+  'git' \
+  'python' \
   'spectrum' \
   'utility' \
   'completion' \
   'prompt'
+
+# 'environment' module must be loaded first
+# 'completion' must load *after* the 'utility' module
+# if enabled, 'syntax-highlighting' should be second last, before 'prompt'
+# 'prompt' should be loaded last
 
 #
 # Editor
@@ -72,7 +79,7 @@ zstyle ':prezto:module:editor' keymap 'emacs'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+zstyle ':prezto:module:prompt' theme 'coarsan'
 
 #
 # Screen

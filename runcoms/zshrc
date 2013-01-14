@@ -12,3 +12,21 @@ fi
 
 # Customize to your needs...
 
+# Set additional directories for functions
+fpath=(
+  $HOME/.zsh/functions
+  $fpath
+)
+
+autoload -Uz term_colors
+
+# Macvim
+if [[ "$OSTYPE" == darwin* ]]
+then
+  alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+fi
+
+alias hastier="cat $1 | haste | pbcopy"
+alias mman="middleman"
+
+echo "Did you update your system today?"
