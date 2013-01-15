@@ -12,6 +12,9 @@ fi
 
 # Customize to your needs...
 
+# prezto ovverides
+alias rm='rm'
+
 # Set additional directories for functions
 fpath=(
   $HOME/.zsh/functions
