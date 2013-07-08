@@ -77,9 +77,9 @@ unset path_file
 
 # Set the list of directories that Zsh searches for programs.
 path=(
-  $HOME/{bin,.rbenv/bin}
+  $HOME/{bin}
   /usr/local/{bin,sbin}
-  /usr/local/share/{python,python3,npm/bin}
+  /usr/local/share/{npm/bin}
   /usr/{bin,sbin}
   /{bin,sbin}
   $path
@@ -113,13 +113,4 @@ export VIRTUAL_ENV_DISABLE_PROMPT=true
 if which virtualenvwrapper_lazy.sh &>/dev/null
 then
   source virtualenvwrapper_lazy.sh
-fi
-
-#
-# rbenv Ruby Version Manager
-#
-
-if which rbenv &>/dev/null
-then
-  eval "$(rbenv init -)"
 fi
