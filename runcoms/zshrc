@@ -12,6 +12,10 @@ fi
 
 # Customize to your needs...
 
+# When using git, HEAD^ conflicts with EXTENDED_GLOB, NOMATCH will send it on
+# to git correctly
+unsetopt NOMATCH
+
 # prezto ovverides
 alias rm='rm'
 
